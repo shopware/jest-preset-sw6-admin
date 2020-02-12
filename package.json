@@ -1,12 +1,37 @@
 {
-  "name": "sw6-jest-test-environment",
+  "name": "@shopware-ag/jest-preset-sw6-admin",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Jest Test preset for Shopware 6 administration unit tests",
+  "main": "jest-preset.js",
+  "keywords": [
+    "jest",
+    "unit",
+    "test",
+    "unit-test",
+    "shopware",
+    "sw6"
+  ],
+  "author": "klarstil",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shopware/jest-preset-sw6-admin.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "bugs": {
+    "url": "https://github.com/shopware/jest-preset-sw6-admin/issues"
+  },
+  "homepage": "https://github.com/shopware/jest-preset-sw6-admin#readme",
+  "engines": {
+    "node": ">= 8.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "babel-jest": "^25.1.0",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "twig": "^1.14.0",
+    "uuid": "^3.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
