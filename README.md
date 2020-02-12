@@ -17,7 +17,7 @@ npm install @shopware-ag/jest-preset-sw6-admin --save-dev
 
 ```json
 {
-  "preset": "@shopware-ag/jest-preset-sw6-admin
+  "preset": "@shopware-ag/jest-preset-sw6-admin"
 }
 ```
 
@@ -29,7 +29,7 @@ module.exports = {
     preset: '@shopware-ag/jest-preset-sw6-admin',
     globals: {
         artifactsPath: 'build/artifacts', // optional
-        adminPath: '<path-to-sw6-administration>', // required
+        adminPath: '<file-path-to-sw6-administration>', // required, e.g. /www/sw6/platform/src/Administration/Resources/app/administration
         suiteName: 'My Shopware 6 jest test suite' // optional
     }
 }
