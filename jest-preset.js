@@ -42,15 +42,5 @@ module.exports = {
 
     testMatch: [
         '<rootDir>/test/**/*.spec.js'
-    ],
-
-    coverageDirectory: global.artifactsPath || '',
-    reporters: [
-        'default',
-        ['jest-junit', {
-            suiteName: global.suiteName || 'Shopware 6 Unit Tests',
-            outputDirectory: global.artifactsPath || '',
-            outputName: 'administration.junit.xml'
-        }]
     ]
 };

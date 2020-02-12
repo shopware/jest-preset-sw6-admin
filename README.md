@@ -28,9 +28,7 @@ It's important to configure the preset using the following configuration:
 module.exports = {
     preset: '@shopware-ag/jest-preset-sw6-admin',
     globals: {
-        artifactsPath: 'build/artifacts', // optional
         adminPath: '<file-path-to-sw6-administration>', // required, e.g. /www/sw6/platform/src/Administration/Resources/app/administration
-        suiteName: 'My Shopware 6 jest test suite' // optional
     }
 }
 ```
@@ -39,7 +37,6 @@ module.exports = {
 
 * `collectCoverage` - Code coverage will be generated using the reporters listed under `coverageReporters`
 * `coverageReporters` - The presets uses `lcov`, `text` & `clover` as coverage reporters
-* `coverageDirectory` - Code coverage will be generated into the `globals.artifactsPath`, if `undefined`, it will be generated into the folder which contains the `jest.config.js` / `package.json` file
 * `watchPathIgnorePatterns` - Ignores the `node_modules` folder for the watch mode of Jest
 * `clearMocks` - Automatically clear mock calls and instances before every test. 
 * `moduleFileExtensions` - File with the extension `js` will automatically used as extensions your module use.
@@ -48,4 +45,3 @@ module.exports = {
 * `modulePathIgnorePatterns` - Ignores e2e test specs by default
 * `setupFilesAfterEnv` - Provides a polyfill for Webpack' `require.context` and sets up the global Shopware third-party interface for every test. The object can be accessed using `global.Shopware` in test files.
 * `testMatch` - Matches all files containing `.spec.js` in the test directory
-* `reporters` - Uses the reporters `default` and [`jest-junit`](https://www.npmjs.com/package/jest-junit). `jest-junit` is automatically configured. It can be customized using `global.suiteName` & `global.artifactsPath`
