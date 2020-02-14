@@ -1,5 +1,4 @@
 const crypto = require('crypto');
-const twigRenderer = require('./twig-renderer');
 
 function getCacheKey(fileData, filePath, configStr) {
     return crypto.createHash('md5')
@@ -8,10 +7,9 @@ function getCacheKey(fileData, filePath, configStr) {
 }
 exports.getCacheKey = getCacheKey;
 
-function process(src, path) {
-    const compiledTemplate = twigRenderer(src, path);
+function process(src) {
     return {
-        code: '/* istanbul ignore file */\nmodule.exports = `' + compiledTemplate + '`;' //eslint-disable-line
+        code: '/* istanbul ignore file */\nmodule.exports = ' + JSON.stringify(src) + ';' //eslint-disable-line
     };
 }
 exports.process = process;
