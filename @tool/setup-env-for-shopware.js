@@ -14,4 +14,5 @@ module.exports = (() => {
     require(resolve(join(srcPath, 'src/app/filter/index.js'))).default(); // eslint-disable-line
     require(resolve(join(srcPath, 'src/app/filter/index.js'))).default(); // eslint-disable-line
     require(resolve(join(srcPath, 'src/app/init-pre/state.init.js'))).default(); // eslint-disable-line
+    require(resolve(join(srcPath, 'src/app/init/component-helper.init.js'))).default(); // eslint-disable-line
 })();
