@@ -8,21 +8,23 @@
 Default [Jest](https://jestjs.io/) preset for Shopware 6 administration development.
 
 ```bash
-npm install @shopware-ag/jest-preset-sw6-admin --save-dev
+npm install jest @shopware-ag/jest-preset-sw6-admin @babel/preset-env @babel/plugin-proposal-class-properties --save-dev
 ```
 
 ## Setup
 
-### Via `jest.config.json` or `jest` field in `package.json`
+After installaing the necessary required packages, please create a file called `babel.config.json` right next to your own `package.json` with the following content:
 
 ```json
 {
-  "preset": "@shopware-ag/jest-preset-sw6-admin"
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-proposal-class-properties"]
 }
 ```
 
-## Usage
-It's important to configure the preset using the following configuration:
+### Via `jest.config.js`
+
+Next up, create a file `jest.config.js` which should contain the following content:
 
 ```js
 module.exports = {
