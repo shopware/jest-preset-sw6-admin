@@ -23,7 +23,8 @@ module.exports = {
 
     moduleNameMapper: {
         '\\.(css|less|scss)$': resolve(join(__dirname, '@tool/__mocks__/styleMock.js')),
-        '^src(.*)$': `${process.env.ADMIN_PATH}/src$1`
+        '^src(.*)$': `${process.env.ADMIN_PATH}/src$1`,
+        vue$: 'vue/dist/vue.common.dev.js',
     },
 
     transform: {
