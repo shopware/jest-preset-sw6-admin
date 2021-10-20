@@ -5,7 +5,7 @@ if (!srcPath) {
     throw new Error('"globals.adminPath" is not defined. A file path to a Shopware 6 administration is required');
 }
 
-const Shopware = require(resolve(join(srcPath, 'src/core/shopware.js')));
+const Shopware = require(resolve(join(srcPath, `src/core/shopware.ts`))).default;
 
 module.exports = (() => {
     global.Shopware = Shopware;
