@@ -1,6 +1,6 @@
 {
   "name": "@shopware-ag/jest-preset-sw6-admin",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "description": "Jest Test preset for Shopware 6 administration unit tests",
   "main": "jest-preset.js",
   "keywords": [
@@ -28,12 +28,10 @@
     "@babel/core": "^7.8.7",
     "babel-jest": "^26.2.2",
     "babel-plugin-require-context-hook": "^1.0.0",
-    "uuid": "^8.3.0"
+    "uuid": "^8.3.0",
+    "@babel/preset-typescript": "^7.16.0"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "devDependencies": {
-    "@babel/preset-typescript": "^7.15.0"
   }
 }
