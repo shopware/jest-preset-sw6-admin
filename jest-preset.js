@@ -24,7 +24,9 @@ module.exports = {
 
     moduleNameMapper: {
         '\\.(css|less|scss)$': resolve(join(__dirname, '@tool/__mocks__/styleMock.js')),
-        '^src(.*)$': `${process.env.ADMIN_PATH}/src$1`
+        '^src(.*)$': `${process.env.ADMIN_PATH}/src$1`,
+        // Quick fix to avoid mixing of es modules and umd on webpack builds
+        '\@shopware-ag/admin-extension-sdk/es/(.*)$': '\@shopware-ag/admin-extension-sdk/umd/$1',
     },
 
     transform: {
