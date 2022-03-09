@@ -28,6 +28,7 @@ module.exports = {
         // Quick fix to avoid mixing of es modules and umd on webpack builds
         '\@shopware-ag/admin-extension-sdk/es/(.*)$': '\@shopware-ag/admin-extension-sdk/umd/$1',
         '\@shopware-ag/admin-extension-sdk/es': '\@shopware-ag/admin-extension-sdk/umd',
+        '^lodash-es$': 'lodash',
     },
 
     transform: {
