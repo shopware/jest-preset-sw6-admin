@@ -47,6 +47,7 @@ module.exports = {
     ],
 
     testMatch: [
-        '<rootDir>/test/**/*.spec.js'
+        '<rootDir>/test/**/*.spec.js',
+        '<rootDir>/test/**/*.spec.ts'
     ]
 };
