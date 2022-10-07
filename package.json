@@ -1,6 +1,6 @@
 {
   "name": "@shopware-ag/jest-preset-sw6-admin",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Jest Test preset for Shopware 6 administration unit tests",
   "main": "jest-preset.js",
   "keywords": [
@@ -22,14 +22,15 @@
   },
   "homepage": "https://github.com/shopware/jest-preset-sw6-admin#readme",
   "engines": {
-    "node": ">= 8.3"
+    "node": "^16.0.0",
+    "npm": "^8.0.0"
   },
   "dependencies": {
-    "@babel/core": "^7.8.7",
-    "babel-jest": "^26.2.2",
+    "@babel/core": "^7.17.12",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-jest": "^27.5.1",
     "babel-plugin-require-context-hook": "^1.0.0",
-    "uuid": "^8.3.0",
-    "@babel/preset-typescript": "^7.16.0"
+    "uuid": "^8.3.2"
   },
   "publishConfig": {
     "access": "public"
