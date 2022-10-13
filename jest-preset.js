@@ -33,7 +33,7 @@ module.exports = {
     transform: {
         '^.+\\.jsx?$': resolve(join(__dirname, '@tool/transform.js')),
         '^.+\\.tsx?$': resolve(join(__dirname, '@tool/transform.js')),
-        '^.+\\.twig$': resolve(join(__dirname, '@tool/twig-to-vue-transformer/index.js'))
+        '^.+(\\.twig|\\.html)$': resolve(join(__dirname, '@tool/twig-to-vue-transformer/index.js')),
     },
 
     modulePathIgnorePatterns: [
