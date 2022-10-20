@@ -46,8 +46,8 @@ module.exports = {
     ],
 
     testMatch: [
-        '<rootDir>/test/**/*.spec.js',
-        '<rootDir>/test/**/*.spec.ts'
+        '<rootDir>/src/**/*.spec.js',
+        '<rootDir>/src/**/*.spec.ts'
     ],
 
     testEnvironment: 'jsdom',
