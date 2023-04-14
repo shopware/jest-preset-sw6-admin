@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
  
 
+ ## [v4.0.2] - 2023-04-14
+ 
+### Changed
+- Make default imports for mixins, directives, filters, states and the component helper independent of file type (TS or JS)
+
  ## [v4.0] - 2022-10-20
  
 Only load `*.spec.js|ts` from `src` 

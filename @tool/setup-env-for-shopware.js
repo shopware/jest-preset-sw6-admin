@@ -9,10 +9,9 @@ const Shopware = require(resolve(join(srcPath, `src/core/shopware.ts`))).default
 
 module.exports = (() => {
     global.Shopware = Shopware;
-    require(resolve(join(srcPath, 'src/app/mixin/index.js'))).default(); // eslint-disable-line
-    require(resolve(join(srcPath, 'src/app/directive/index.js'))).default(); // eslint-disable-line
-    require(resolve(join(srcPath, 'src/app/filter/index.js'))).default(); // eslint-disable-line
-    require(resolve(join(srcPath, 'src/app/filter/index.js'))).default(); // eslint-disable-line
-    require(resolve(join(srcPath, 'src/app/init-pre/state.init.js'))).default(); // eslint-disable-line
-    require(resolve(join(srcPath, 'src/app/init/component-helper.init.js'))).default(); // eslint-disable-line
+    require(resolve(join(srcPath, 'src/app/mixin/index'))).default(); // eslint-disable-line
+    require(resolve(join(srcPath, 'src/app/directive/index'))).default(); // eslint-disable-line
+    require(resolve(join(srcPath, 'src/app/filter/index'))).default(); // eslint-disable-line
+    require(resolve(join(srcPath, 'src/app/init-pre/state.init'))).default(); // eslint-disable-line
+    require(resolve(join(srcPath, 'src/app/init/component-helper.init'))).default(); // eslint-disable-line
 })();
