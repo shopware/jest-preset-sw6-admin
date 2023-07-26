@@ -1,6 +1,13 @@
 const babelOptions = {
     presets: ['@babel/preset-typescript'],
     plugins: ['require-context-hook'],
+    env: {
+        test: {
+            presets: [
+                '@babel/preset-env'
+            ],
+        }
+    },
     ignore: [],
     exclude: []
 };

@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
  
 
+ ## [v4.1.0] - 2023-07-26
+ 
+### Added
+- Added `@babel/preset-env` to transform test env
+
  ## [v4.0.2] - 2023-04-14
  
 ### Changed
