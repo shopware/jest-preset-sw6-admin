@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/shopware/jest-preset-sw6-admin)
 ![GitHub last commit](https://img.shields.io/github/last-commit/shopware/jest-preset-sw6-admin)
 ![Libraries.io](https://img.shields.io/librariesio/release/npm/%40shopware-ag/jest-preset-sw6-admin/latest)
-![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/shopware/jest-preset-sw6-admin?include_prereleases)
+![Latest version](https://img.shields.io/github/package-json/v/shopware/jest-preset-sw6-admin)
 
 Default [Jest](https://jestjs.io/) preset for Shopware 6 administration development.
 
