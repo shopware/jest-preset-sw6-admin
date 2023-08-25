@@ -6,7 +6,7 @@ if (!srcPath) {
 }
 
 const vue3 = !!process.env.VUE3;
-if (!vue3) {
+if (vue3) {
     // To make sure that the vue3 logic in the boot process is used
     global.window._features_ = {
         VUE3: true,
