@@ -8,12 +8,6 @@ function getCacheKey(fileData, filePath, configStr) {
 exports.getCacheKey = getCacheKey;
 
 function process(src) {
-    // Get rid of HTML comments
-    src = src.replaceAll(/<!--[\s\S]*?-->/gm, '');
-
-    // Get rid of Vue comments
-    src = src.replaceAll(/^(?!\{#-)\{#[\s\S]*?#\}/gm, '');
-
     return {
         code: '/* istanbul ignore file */\nmodule.exports = ' + JSON.stringify(src) + ';' //eslint-disable-line
     };
