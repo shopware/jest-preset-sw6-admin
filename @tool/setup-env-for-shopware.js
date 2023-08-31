@@ -5,12 +5,17 @@ if (!srcPath) {
     throw new Error('"globals.adminPath" is not defined. A file path to a Shopware 6 administration is required');
 }
 
+global.window._features_ = {
+    VUE3: false,
+    vue3: false,
+};
+
 const vue3 = !!process.env.VUE3;
 if (vue3) {
     // To make sure that the vue3 logic in the boot process is used
     global.window._features_ = {
         VUE3: true,
-        vue3: true
+        vue3: true,
     };
 
     // Try to reduce the amount of warnings

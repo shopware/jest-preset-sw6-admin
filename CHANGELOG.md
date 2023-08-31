@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
  
+ ## [v4.2.2] - 2023-08-25
+
+### Added
+- Added `window._features_.vue3` in Vue 2 with false
+
 ## [v4.2.1] - 2023-08-25
 
 ### Changed
