@@ -5,7 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
  
- ## [v4.2.2] - 2023-08-25
+## [v4.2.3] - 2024-01-17
+
+### Added
+- Added `meteor-admin-sdk` to transform option
+
+## [v4.2.2] - 2023-08-25
 
 ### Added
 - Added `window._features_.vue3` in Vue 2 with false
