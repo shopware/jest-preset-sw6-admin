@@ -6,6 +6,7 @@ if (!srcPath) {
 }
 
 global.window._features_ = {};
+global.console.warn = () => {};
 
 const Shopware = require(resolve(join(srcPath, `src/core/shopware.ts`))).ShopwareInstance;
 

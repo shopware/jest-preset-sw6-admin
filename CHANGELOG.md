@@ -4,7 +4,17 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
- 
+
+## [v4.2.5] - 2024-05-28
+
+### Changed
+- Changed `setup-env-for-shopware.js` to hide `console.warn` as long as Vue compat is enabled
+
+## [v4.2.4] - 2024-05-07
+
+### Added
+- Added support for platform `*.vite` files
+
 ## [v4.2.3] - 2024-01-17
 
 ### Added
