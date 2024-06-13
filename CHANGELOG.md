@@ -5,7 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [v4.3.0] - 2024-06-16
+## [v4.3.1] - 2024-06-13
+
+### Changed
+- Enable the console warnings when Vue compat mode is disabled
+
+## [v4.3.0] - 2024-06-12
 
 ### Added
 - Added the possibiliy to disable the Vue compat mode by setting the environment variable `DISABLE_JEST_COMPAT_MODE` to `true`

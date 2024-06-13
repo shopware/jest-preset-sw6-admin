@@ -5,12 +5,15 @@ if (!srcPath) {
     throw new Error('"globals.adminPath" is not defined. A file path to a Shopware 6 administration is required');
 }
 
+const disableJestCompatMode = process.env.DISABLE_JEST_COMPAT_MODE === 'true' ?? false;
+
 global.window._features_ = {};
-global.console.warn = () => {};
+
+if (!disableJestCompatMode) {
+    global.console.warn = () => {};
+}
 
 const Shopware = require(resolve(join(srcPath, `src/core/shopware.ts`))).ShopwareInstance;
-
-const disableJestCompatMode = process.env.DISABLE_JEST_COMPAT_MODE === 'true' ?? false;
 
 // Take all keys out of Shopware.compatConfig but set them to true
 const compatConfig = Object.fromEntries(Object.keys(Shopware.compatConfig).map(key => [key, !disableJestCompatMode]));
