@@ -13,6 +13,10 @@ if (!disableJestCompatMode) {
     global.console.warn = () => {};
 }
 
+if (disableJestCompatMode) {
+    window._features_.DISABLE_VUE_COMPAT = true;
+}
+
 const Shopware = require(resolve(join(srcPath, `src/core/shopware.ts`))).ShopwareInstance;
 
 // Take all keys out of Shopware.compatConfig but set them to true
