@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v4.3.4] - 2024-06-26
+
+### Changed
+- Changed global Pinia store to be added to created app instance instead of global Vue object which only works with Vue compat mode
+
+### Changed
+- Activate feature flag "DISABLE_VUE_COMPAT" when Vue compat mode is disabled
+
 ## [v4.3.3] - 2024-06-25
 
 ### Changed
