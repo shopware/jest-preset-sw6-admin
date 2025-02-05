@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v5.0.0] - 2025-02-06
+
+### Changed
+- Breaking change: Removed support for the Vue 2 compatibility mode. The Vue 3 mode is now the default mode.
+
 ## [v4.3.4] - 2024-06-26
 
 ### Changed
