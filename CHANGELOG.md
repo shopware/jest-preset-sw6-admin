@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v6.0.0] - 2025-02-06
+- Breaking change: Removed `require.context` support for Webpack code.
+- Added support for `import.meta.glob` for Vite code.
+
 ## [v5.0.0] - 2025-02-06
 
 ### Changed
