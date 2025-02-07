@@ -27,7 +27,7 @@
   "dependencies": {
     "@babel/core": "^7.17.12",
     "@babel/preset-typescript": "^7.16.7",
-    "babel-jest": "^27.5.1",
+    "babel-jest": "^29.7.0",
     "babel-plugin-shopware-vite-meta-glob": "^0.0.1",
     "uuid": "^8.3.2"
   },
