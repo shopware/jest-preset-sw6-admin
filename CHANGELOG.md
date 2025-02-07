@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v6.0.1] - 2025-02-07
+- Replace `babel-plugin-transform-vite-meta-glob` with `babel-plugin-shopware-vite-meta-glob`
+
 ## [v6.0.0] - 2025-02-06
 - Breaking change: Removed `require.context` support for Webpack code.
 - Added support for `import.meta.glob` for Vite code.

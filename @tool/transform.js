@@ -1,7 +1,7 @@
 const babelOptions = {
     presets: ['@babel/preset-typescript'],
     plugins: [
-        'transform-vite-meta-glob'
+        'shopware-vite-meta-glob'
     ],
     env: {
         test: {
