@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v6.0.4] - 2025-11-18
+
+### Changed
+- Updated dependencies
+- CI/CD workflow now targets `main` branch instead of `master`
+- Updated GitHub Actions to newer versions (checkout@v5, setup-node@v6)
+- Dependabot schedule changed from daily to weekly updates
+- Dependabot now targets `main` branch
+
+### Removed
+- Removed `uuid` dependency, which was not used
+
 ## [v6.0.1] - 2025-02-07
 - Replace `babel-plugin-transform-vite-meta-glob` with `babel-plugin-shopware-vite-meta-glob`
 
