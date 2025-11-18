@@ -1,26 +1,50 @@
-name: Publish to NPM
+name: CI/CD
 
-on: push
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
-  publish:
-    if: github.ref == 'refs/heads/master'
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Node.js
-        uses: actions/setup-node@v5
-      - name: Retrieve the cached "node_modules" directory (if present)
-        uses: actions/cache@v4
-        id: node-cache
+        uses: actions/setup-node@v6
         with:
-          path: node_modules
-          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-      - name: Install dependencies (if the cached directory was not found)
-        if: steps.node-cache.outputs.cache-hit != 'true'
+          node-version: 24
+          package-manager: npm
+          cache: "npm"
+      - name: Install dependencies
         run: npm ci
+      # - name: Build
+      #   run: npm run build
+      # - name: Run tests
+      #   run: npm run test
+
+  publish:
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          package-manager: npm
+          cache: "npm"
+      - name: Install dependencies
+        run: npm ci
+      # - name: Build
+      #   run: npm run build
       - uses: JS-DevTools/npm-publish@v4
         with:
-          token: ${{ secrets.NPM_TOKEN }}
           access: "public"

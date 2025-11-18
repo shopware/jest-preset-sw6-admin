@@ -7,8 +7,8 @@ version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
+    target-branch: "main"
     schedule:
-      interval: "daily"
-    reviewers:
-      - "klarstil"
-      - "leichteckig"
+      interval: "weekly"
+    commit-message:
+      prefix: "ci(deps): "
