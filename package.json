@@ -28,7 +28,7 @@
     "@babel/core": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
     "babel-jest": "^27.5.1",
-    "babel-plugin-shopware-vite-meta-glob": "^0.0.4"
+    "babel-plugin-shopware-vite-meta-glob": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"
